@@ -12,6 +12,9 @@ public sealed class ModuleManifestReader
         var manifest = await JsonSerializer.DeserializeAsync<ModuleManifest>(stream, JsonOptions, cancellationToken)
             .ConfigureAwait(false);
 
+        
+
+
         return manifest ?? throw new InvalidDataException($"Module manifest '{path}' is empty or invalid.");
     }
 }

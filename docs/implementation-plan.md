@@ -520,3 +520,21 @@ Memory goals can drift if not measured continuously. Benchmarks and diagnostic c
 - Prefer restart-safe updates before hot updates.
 - Measure allocations before optimizing heavily.
 - Build vertical slices instead of large speculative systems.
+
+## 16. Keyboard Shortcut Policy
+
+GorkyIDE should prefer familiar Visual Studio keyboard shortcuts where they make sense in a terminal UI. This keeps the IDE approachable for C# developers and makes future documentation simpler.
+
+Initial shortcut mapping:
+
+- `Ctrl+S` saves the active document.
+- `Ctrl+K, Ctrl+D` formats the active document.
+- `Ctrl+F4` closes the active document tab.
+- `F6` switches focus between major panes.
+- Arrow keys navigate the active pane.
+- `Enter` opens the selected file or expands the selected folder.
+- `Left Arrow` collapses the selected folder or moves to the parent node.
+- `Right Arrow` expands the selected folder.
+- `Q` is a temporary terminal-app quit command during early development.
+
+Where Visual Studio shortcuts conflict with terminal behavior, GorkyIDE should use the closest practical equivalent and document the difference.
